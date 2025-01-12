@@ -11,10 +11,10 @@ namespace day2
     {
         T[] elements;
         int front;
-        int rear; // Last Element
+        int rear;
         int size;
 
-        // Constructor 
+
         public CustomQueue(int capacity)
         {
             elements = new T[capacity];
@@ -23,7 +23,6 @@ namespace day2
             size = 0;
         }
 
-        // Enqueue 
         public void Enqueue(T item)
         {
             if (size == elements.Length)
@@ -35,7 +34,6 @@ namespace day2
             size++;
         }
 
-        // Dequeue 
         public T Dequeue()
         {
             if (size == 0)
@@ -48,7 +46,6 @@ namespace day2
             return item;
         }
 
-        // Display 
         public void Display()
         {
             if (size == 0)

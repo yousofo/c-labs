@@ -10,7 +10,7 @@ namespace Utils
             Console.WriteLine("------------------------------------------------------------");
             Console.ForegroundColor = ConsoleColor.White;
         }
-        public static void PrintList(IEnumerable collection)
+        public static void PrintList<T>(IEnumerable<T> collection)
         {
             PrintLine();
             Console.WriteLine(string.Join(", ", collection));

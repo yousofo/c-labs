@@ -34,8 +34,10 @@ namespace day2
             // + read method to read from the file and put into the list in memory 
             // + remove from both of the list and file
             #endregion
-
+            
             #region swap
+
+            Printing.PrintLine();
 
             int swap1 = 1, swap2 = 2;
             Console.WriteLine($"swap1: ${swap1}, swap2: {swap2}");
@@ -46,6 +48,8 @@ namespace day2
             #endregion
 
             #region normal List
+
+            Printing.PrintLine();
 
             List<int> list = [1, 2, 3, 4, 5];
 
@@ -78,11 +82,18 @@ namespace day2
             ComplexNumber c1 = new(1, 2);
             ComplexNumber c2 = new(3, 4);
 
+            var complexList = new List<ComplexNumber>();
+            complexList.AddRange([c1,c2]);
+
+
+
             Console.WriteLine(c1.CompareTo(c2));//-1
 
             #endregion
 
             #region stored list
+
+            Printing.PrintLine();
 
             var slist1 = new StoredList();
             slist1.Display();
@@ -95,9 +106,12 @@ namespace day2
 
             #endregion
 
+            //hashset Dictionary
             #region trying
 
             ///hashset
+
+            Printing.PrintLine();
 
             HashSet<string> hset1 = [];
             hset1.Add("C");
@@ -130,6 +144,8 @@ namespace day2
 
             #region custom stack
 
+            Printing.PrintLine();
+
             CustomStack<int> stack = new(5);
 
             // Push 
@@ -151,6 +167,8 @@ namespace day2
             #endregion
 
             #region custom queue
+
+            Printing.PrintLine();
 
             CustomQueue<int> queue = new(5);
 

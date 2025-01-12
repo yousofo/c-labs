@@ -12,32 +12,37 @@ namespace day4.Football
 
         public Refree refree;
 
-        public Ball ball = new();
+        public Ball Ball;
+
 
         public Match()
         {
+            Ball = new Ball();
+            refree = new(1, "refree name");
             players.match = this;
-            ball.OnBallMove += refree.Move;
-
         }
 
         public class PlayersClass : List<Player>
         {
             public Match match;
-            public new void Add(Player p)
+            public new void AddRange(IEnumerable<Player> players)
             {
-                base.Add(p);
-                match.ball.OnBallMove += p.Move;
+                foreach (var p in players)
+                {
+                    match.Ball.OnBallMove += p.Move;
+                }
+                base.AddRange(players);
             }
-
             public new void Remove(Player p)
             {
                 base.Remove(p);
 
-                match.ball.OnBallMove -= p.Move;
+                match.Ball.OnBallMove -= p.Move;
 
                 Console.WriteLine($"removed player ({p.Id}:{p.Name})");
             }
+
+
         }
     }
 }

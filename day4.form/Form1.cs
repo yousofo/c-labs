@@ -20,7 +20,14 @@ namespace day4.form
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            string userName = txtUserName.Text;
+            string password = txtPassword.Text;
+            MessageBox.Show($"UserName : {userName} | Password : {password}");
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

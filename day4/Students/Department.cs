@@ -27,10 +27,5 @@ namespace day4.Students
 
         public override string ToString() => string.Join(", ", this);
 
-        public void Print()
-        {
-            Printing.PrintList(this);
-        }
-
     }
 }

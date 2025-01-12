@@ -28,32 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtUserName = new TextBox();
+            txtPassword = new TextBox();
             button1 = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // txtUserName
             // 
-            textBox1.Location = new Point(255, 72);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(279, 23);
-            textBox1.TabIndex = 0;
-            textBox1.Text = "name";
+            txtUserName.Location = new Point(291, 96);
+            txtUserName.Margin = new Padding(3, 4, 3, 4);
+            txtUserName.Name = "txtUserName";
+            txtUserName.Size = new Size(318, 27);
+            txtUserName.TabIndex = 0;
+            txtUserName.Text = "name";
+            txtUserName.TextChanged += textBox1_TextChanged;
             // 
-            // textBox2
+            // txtPassword
             // 
-            textBox2.Location = new Point(255, 118);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(279, 23);
-            textBox2.TabIndex = 1;
-            textBox2.Text = "password";
+            txtPassword.Location = new Point(291, 157);
+            txtPassword.Margin = new Padding(3, 4, 3, 4);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(318, 27);
+            txtPassword.TabIndex = 1;
+            txtPassword.Text = "password";
+            txtPassword.UseSystemPasswordChar = true;
             // 
             // button1
             // 
-            button1.Location = new Point(255, 175);
+            button1.Location = new Point(291, 233);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(279, 24);
+            button1.Size = new Size(319, 32);
             button1.TabIndex = 2;
             button1.Text = "display";
             button1.UseVisualStyleBackColor = true;
@@ -63,12 +68,13 @@
             // 
             AccessibleDescription = "";
             AccessibleName = "";
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtPassword);
+            Controls.Add(txtUserName);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -78,8 +84,8 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtUserName;
+        private TextBox txtPassword;
         private Button button1;
     }
 }

@@ -12,7 +12,6 @@ namespace day2
         int top;
         int maxSize;
 
-        // Constructor
         public CustomStack(int size)
         {
             maxSize = size;
@@ -20,7 +19,6 @@ namespace day2
             top = -1;
         }
 
-        // Push 
         public void Push(T item)
         {
             if (top == maxSize - 1)
@@ -31,7 +29,6 @@ namespace day2
             elements[++top] = item;
         }
 
-        // Pop 
         public T Pop()
         {
             if (top == -1)
@@ -41,7 +38,6 @@ namespace day2
             return elements[top--];
         }
 
-        // Display
         public void Display()
         {
             if (top == -1)

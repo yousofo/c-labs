@@ -35,7 +35,7 @@ namespace day2
         {
             foreach (var item in this)
             {
-                Console.Write(item.Name + " ");
+                Console.WriteLine($"{item.Name}: {item.Age}");
             }
             Console.WriteLine("\n");
         }
@@ -48,18 +48,14 @@ namespace day2
 
         public void TriggerSync()
         {
-
             var jsonString = JsonSerializer.Serialize(this, options);
             File.WriteAllText(filePath, jsonString);
-
         }
 
         public void Initialize()
         {
             var jsonString = File.ReadAllText(filePath);
-
             var data = JsonSerializer.Deserialize<DataDto[]>(jsonString, options);
-
             AddRange(data);
         }
 

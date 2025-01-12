@@ -8,10 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="bin\Debug\net9.0\data.json" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Utils\Utils.csproj" />
   </ItemGroup>
 
