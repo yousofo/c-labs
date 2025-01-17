@@ -12,13 +12,17 @@ namespace day4.Football
 
         public Refree refree;
 
-        public Ball Ball;
+        public Ball Ball
+        {
+            get; set;
+        }
 
 
         public Match()
         {
             Ball = new Ball();
             refree = new(1, "refree name");
+            this.Ball.OnBallMove += refree.Move;
             players.match = this;
         }
 

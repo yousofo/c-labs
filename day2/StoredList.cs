@@ -37,7 +37,7 @@ namespace day2
             {
                 Console.WriteLine($"{item.Name}: {item.Age}");
             }
-            Console.WriteLine("\n");
+            Console.WriteLine('-');
         }
 
         public new void Clear()
@@ -48,7 +48,7 @@ namespace day2
 
         public void TriggerSync()
         {
-            var jsonString = JsonSerializer.Serialize(this, options);
+            var jsonString = JsonSerializer.Serialize(this);
             File.WriteAllText(filePath, jsonString);
         }
 

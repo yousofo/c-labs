@@ -28,7 +28,10 @@ namespace day4
                 new(6,"yousef"),
             };
 
+            Console.WriteLine(string.Join(", ", dep1));
             dep1[dep1.FindIndex(e => e.Name == "ahmed")].IncreaseAbsence(3);
+            //dep1[dep1.FindIndex(e => e.Name == "ahmed")].IncreaseAbsence(3);
+
             dep1[dep1.FindIndex(e => e.Name == "Mohamed")].IncreaseAbsence(3);
 
             Console.WriteLine(string.Join(", ", dep1));

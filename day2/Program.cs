@@ -106,7 +106,6 @@ namespace day2
 
             #endregion
 
-            //hashset Dictionary
             #region trying
 
             ///hashset
@@ -125,7 +124,7 @@ namespace day2
                 Console.WriteLine(ele);
             }
 
-            ///Dictionary
+            ///dictionary
 
             Dictionary<int, string> dict1 = new(){
                            { 1, "a" },
@@ -148,20 +147,16 @@ namespace day2
 
             CustomStack<int> stack = new(5);
 
-            // Push 
             stack.Push(10);
             stack.Push(20);
             stack.Push(30);
 
-            //  Display The CustomStack
             stack.Display();
 
-            // Pop 
             stack.Pop();
             stack.Pop();
             stack.Pop();
 
-            // Display The CustomStack 
             stack.Display();
 
             #endregion
