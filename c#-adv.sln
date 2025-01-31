@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "day3", "day3\day3.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExaminationSystem", "ExaminationSystem\ExaminationSystem.csproj", "{F6803FF5-9416-4DAC-9B33-F34B163C0DFA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linq", "linq\linq.csproj", "{0A1FE7A5-3A0D-4E7F-9843-0522CF58C6AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{F6803FF5-9416-4DAC-9B33-F34B163C0DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6803FF5-9416-4DAC-9B33-F34B163C0DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6803FF5-9416-4DAC-9B33-F34B163C0DFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A1FE7A5-3A0D-4E7F-9843-0522CF58C6AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A1FE7A5-3A0D-4E7F-9843-0522CF58C6AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A1FE7A5-3A0D-4E7F-9843-0522CF58C6AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A1FE7A5-3A0D-4E7F-9843-0522CF58C6AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

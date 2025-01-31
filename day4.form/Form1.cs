@@ -20,12 +20,34 @@ namespace day4.form
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string userName = txtUserName.Text;
-            string password = txtPassword.Text;
-            MessageBox.Show($"UserName : {userName} | Password : {password}");
+            float num2Temp;
+
+            if (!(float.TryParse(num1.Text, out float num1Temp) &&
+                float.TryParse(num2.Text, out num2Temp)))
+            {
+
+                MessageBox.Show($"numbers only");
+                return;
+            }
+            MessageBox.Show((num1Temp + num2Temp).ToString());
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void num2_TextChanged(object sender, EventArgs e)
         {
 
         }
